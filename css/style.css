@@ -213,7 +213,7 @@ footer {
 footer a {
     font-family: "Atkinson Hyperlegible", sans-serif;
     color: #FFCB05;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 footer a:hover {
