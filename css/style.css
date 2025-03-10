@@ -1,0 +1,256 @@
+.skip {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    position: absolute;
+    left: 0px;
+    top: -1000px;
+    background: white;
+    overflow: hidden;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.skip:focus {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    top: 10px;
+}
+
+body {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background: rgb(201, 201, 201);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-column: 1/-1;
+    min-height: 100vh;
+    padding: 2vw;
+}
+
+body {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1.4rem;
+}
+
+p {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1.1rem;
+}
+
+li {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1.1rem;
+}
+
+a {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1.5rem;
+}
+
+header {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background-color: #00274C;
+    /* text-color: ##003256; */
+    color: white; 
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column: 1/-1;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+header img {
+    height: 5rem;
+}
+
+header h1 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 2rem;
+}
+
+nav ul {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+nav a {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    display: block;
+    background-color: rgb(53, 82, 143);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    /* justify-content: center; */
+    padding: 1rem;
+    text-decoration: none; /* don't delete this need it for accessibility lol*/
+}
+
+nav a:focus {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background-color: #00274C;
+}
+
+nav a:hover {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    text-decoration: underline;
+    background-color: #328bca;
+}
+
+nav a.current {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    text-decoration: underline;
+}
+
+nav ul {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto, 100px);
+    grid-column: 1/-1;
+    gap: 0.5rem;
+}
+
+main {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(auto, 300px);
+    grid-column: 1/-1;
+    gap: 2rem;
+    max-width: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+    padding-left: 1rem;
+    margin: 2rem 0 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tutoring {
+    padding-left: 0.1rem;
+}
+
+section {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    display: grid;
+    grid-column: 1/-1;
+    gap: 1rem;
+}
+
+main h2 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #00274C;
+}
+
+article {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+main h3 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #00274C;
+}
+
+main figure {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+figure {
+    margin-top: 2rem;
+}
+
+figcaption {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    text-align: center;
+    font-size: medium;
+}
+
+main img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+main ol {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    list-style-type: decimal;
+}
+
+main ul {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    padding-left: 1rem;
+    list-style-type: disc;
+}
+
+footer {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background-color: #00274C;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+footer a {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #FFCB05;
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    text-decoration: underline;
+}
+
+article {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/-1;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+article h3 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+section ul {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto, 200px);
+    grid-column: 1/-1;
+    gap: 1rem;
+}
