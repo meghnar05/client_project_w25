@@ -124,7 +124,7 @@ nav ul {
     grid-template-columns: auto;
     grid-auto-columns: 300px;
     grid-auto-flow: row;
-
+    /* Added the above 3 lines from GPT due to unclear on how repeat(auto) causes issues on Wave. */
     grid-column: 1/-1;
     gap: 0.5rem;
 }
@@ -136,6 +136,7 @@ main {
     grid-template-columns: auto;
     grid-auto-columns: 300px;
     grid-auto-flow: row;
+    /* Added the above 3 lines from GPT due to unclear on how repeat(auto) causes issues on Wave. */
     grid-column: 1/-1;
     gap: 2rem;
     max-width: 100%;
@@ -254,6 +255,7 @@ section ul {
     grid-template-columns: auto;
     grid-auto-columns: 300px;
     grid-auto-flow: row;
+    /* Added the above 3 lines from GPT due to unclear on how repeat(auto) causes issues on Wave. */
     grid-column: 1/-1;
     gap: 1rem;
 }
