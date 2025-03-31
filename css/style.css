@@ -12,6 +12,7 @@
 .skip:focus {
     font-family: "Atkinson Hyperlegible", sans-serif;
     top: 10px;
+    display: inline-block;
 }
 
 body {
@@ -248,4 +249,159 @@ section ul {
     grid-template-columns: repeat(auto, 200px);
     grid-column: 1/-1;
     gap: 1rem;
+}
+
+@media (min-width: 750px) {
+    /* grid-area and grid-template-areas was an idea from GPT and I looked up the syntax on 
+    how to use it on w3schools */
+    header {
+        display: grid;
+        grid-template-areas: "title logo" "nav nav";
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+        padding: 2rem;
+        position: relative;
+        background-color: #001f3f;
+    }
+    
+    header h1 {
+        grid-area: title;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    header img {
+        grid-area: logo;
+        height: 5rem;
+        width: 100%;
+        justify-self: end;
+    }
+    
+    nav {
+        grid-area: nav;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    nav a {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        background-color: #004080;
+        border-radius: 30px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    nav a:hover, nav a:focus {
+        background-color: #005bbb;
+        text-decoration: underline;
+    }
+
+    main h2, main h3, section h2, section h3, article h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1c578f;
+    }
+
+    main p, article p, section p, li {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    figcaption {
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
+    ol, ul {
+        font-size: 1.2rem;
+    }
+
+    .grid-list-two-col {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+        gap: 1rem 2rem;
+        margin-top: 2rem;
+    }
+
+    .grid-list-two-col .grid-heading {
+        text-align: left;
+        /* font-weight: bold; */
+        font-size: 1.3rem;
+        color: #005bbb;
+    }
+      
+    .grid-list-two-col div {
+        text-align: left;
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+      
+}
+  
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+  
+.error-page p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+  
+.back-button {
+    font-size: 1.5rem;
+    background-color: #00274C;
+    /* font-color: white; */
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+  
+.back-home:hover {
+    background-color: #005bbb;
+    text-decoration: underline;
+}
+
+.error-image {
+    width: 30%;
+    padding: 30px;
+}
+  
+.error-footer {
+    margin-top: 175px;
+    width: 100%;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+    /* Asked UM GPT how to make the content stay on the screen -- answer was adding "forwards" */
+}
+  
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
 }
