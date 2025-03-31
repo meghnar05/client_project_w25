@@ -121,7 +121,10 @@ nav a.current {
 nav ul {
     font-family: "Atkinson Hyperlegible", sans-serif;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-columns: auto;
+    grid-auto-columns: 300px;
+    grid-auto-flow: row;
+
     grid-column: 1/-1;
     gap: 0.5rem;
 }
@@ -130,7 +133,9 @@ main {
     font-family: "Atkinson Hyperlegible", sans-serif;
     background-color: whitesmoke;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: auto;
+    grid-auto-columns: 300px;
+    grid-auto-flow: row;
     grid-column: 1/-1;
     gap: 2rem;
     max-width: 100%;
@@ -246,7 +251,9 @@ article p {
 section ul {
     font-family: "Atkinson Hyperlegible", sans-serif;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: auto;
+    grid-auto-columns: 300px;
+    grid-auto-flow: row;
     grid-column: 1/-1;
     gap: 1rem;
 }
